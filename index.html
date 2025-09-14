@@ -21,7 +21,6 @@
             background-color: #0077b6;
             color: #fff;
             padding: 2rem 1rem;
-            position: relative;
         }
 
         header img.profile {
@@ -42,25 +41,6 @@
             margin: 0.5rem 0 0;
             font-size: 1.4rem;
             font-weight: 700;
-        }
-
-        /* Social Links Top-Left */
-        .social-icons {
-            position: absolute;
-            top: 1rem;
-            left: 1rem;
-            display: flex;
-            gap: 10px;
-        }
-
-        .social-icons a img {
-            width: 30px;
-            height: 30px;
-            transition: transform 0.2s;
-        }
-
-        .social-icons a img:hover {
-            transform: scale(1.2);
         }
 
         /* Main Section */
@@ -89,41 +69,24 @@
             font-weight: 700;
         }
 
-        p {
+        p, a {
             font-size: 1.1rem;
             line-height: 1.7;
             text-align: center;
+            text-decoration: none;
+            color: #0077b6;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
 
         .job, .edu {
             margin-bottom: 1rem;
         }
-
-        /* Remove previous highlights */
-        .highlight {
-            background-color: transparent;
-            border-left: none;
-            padding: 0;
-        }
     </style>
 </head>
 <body>
-    <!-- Social Icons Top-Left -->
-    <div class="social-icons">
-        <a href="https://www.linkedin.com/in/fridoon-najafi/" target="_blank">
-            <img src="linkedin.png" alt="LinkedIn" width="30" height="30">
-        </a>
-        <a href="https://www.instagram.com/fridoon_najafi/" target="_blank">
-            <img src="instagram.png" alt="Instagram" width="30" height="30">
-        </a>
-        <a href="https://www.facebook.com/fri.njf" target="_blank">
-            <img src="facebook.png" alt="Facebook" width="30" height="30">
-        </a>
-        <a href="https://www.youtube.com/@Afg_T_M" target="_blank">
-            <img src="youtube.png" alt="YouTube" width="30" height="30">
-        </a>
-    </div>
-
     <!-- Header -->
     <header>
         <img src="profile.jpg" alt="Fridoon Najafi" class="profile" width="150" height="150">
@@ -160,6 +123,15 @@
             <div class="job">
                 <p><strong>Part-time Lecturer | Python for Data Analysis</strong><br>Donghua University | September 2021 – June 2024</p>
             </div>
+        </section>
+
+        <!-- Let's Connect -->
+        <section id="connect">
+            <h2>Let's Connect</h2>
+            <p><a href="https://www.linkedin.com/in/fridoon-najafi/" target="_blank">LinkedIn</a></p>
+            <p><a href="https://www.instagram.com/fridoon_najafi/" target="_blank">Instagram</a></p>
+            <p><a href="https://www.facebook.com/fri.njf" target="_blank">Facebook</a></p>
+            <p><a href="https://www.youtube.com/@Afg_T_M" target="_blank">YouTube</a></p>
         </section>
     </main>
 </body>
